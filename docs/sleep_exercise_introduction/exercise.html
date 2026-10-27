@@ -1,0 +1,495 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7. 運動習慣 &mdash; 睡眠・姿勢・運動入門</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=ecf70b34" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=19757887"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/translations.js?v=4755f45a"></script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" />
+    <link rel="next" title="8. 習慣化の方法" href="habits.html" />
+    <link rel="prev" title="6. 座りすぎを防ぐ" href="sedentary.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            睡眠・姿勢・運動入門
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">本編</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basics.html">2. 座り仕事と身体の基礎知識</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sleep_mechanism.html">3. 睡眠のしくみ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sleep_practice.html">4. 睡眠を整える実践</a></li>
+<li class="toctree-l1"><a class="reference internal" href="posture.html">5. 姿勢と作業環境</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sedentary.html">6. 座りすぎを防ぐ</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">7. 運動習慣</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">7.1. 推奨される身体活動と運動の量</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">7.2. 運動の強さと量の表し方</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">7.2.1. メッツ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">7.2.2. メッツ・時と消費エネルギー</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">7.2.3. 主観的な強さ</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">7.3. 有酸素運動</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">7.4. 筋力トレーニング</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">7.5. 柔軟性とストレッチ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">7.6. 運動と睡眠の関係</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">7.7. 安全に運動するために</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">7.8. 1 週間の計画の例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id13">7.9. 身体活動量を計算するサンプルコード</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id14">7.9.1. 記録の形式</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id15">7.9.2. 使い方</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id16">7.9.3. コードの説明</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="habits.html">8. 習慣化の方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="warning_signs.html">9. 不調のサインと受診の目安</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">付録</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="samples.html">サンプルコード</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">用語集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">参考文献</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">睡眠・姿勢・運動入門</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">7. </span>運動習慣</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1><span class="section-number">7. </span>運動習慣<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>この章では、推奨される身体活動と運動の量、運動の強さの表し方、有酸素運動と筋力トレーニングの始め方、運動と睡眠の関係、安全に運動するための注意を説明する。最後に、1 週間の計画の例と、身体活動量を計算するサンプルコードを紹介する。</p>
+<section id="id2">
+<h2><span class="section-number">7.1. </span>推奨される身体活動と運動の量<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p><a class="reference internal" href="glossary.html#term-18"><span class="xref std std-term">身体活動</span></a>とは、安静にしている状態よりも多くのエネルギーを消費する、すべての動きのことである。身体活動は、日常生活の中で行う<a class="reference internal" href="glossary.html#term-26"><span class="xref std std-term">生活活動</span></a>（通勤で歩く、階段を上る、家事をするなど）と、体力の維持や向上を目的に計画的に行う<a class="reference internal" href="glossary.html#term-1"><span class="xref std std-term">運動</span></a>（ジョギング、筋力トレーニングなど）に分けられる。</p>
+<p>身体活動・運動ガイドは、成人に対して次のことを推奨している。</p>
+<table class="docutils align-default" id="id17">
+<caption><span class="caption-number">表 7.1 </span><span class="caption-text">成人に推奨される身体活動と運動（身体活動・運動ガイドによる）</span><a class="headerlink" href="#id17" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>項目</p></th>
+<th class="head"><p>推奨事項</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>身体活動</p></td>
+<td><p>歩行またはそれと同等以上の強度（3 メッツ以上）の身体活動を 1 日 60 分以上行う。1 日約 8,000 歩以上に相当し、週 23 メッツ・時以上が目安である。</p></td>
+</tr>
+<tr class="row-odd"><td><p>運動</p></td>
+<td><p>息が弾み汗をかく程度以上（3 メッツ以上）の運動を週 60 分以上行う。週 4 メッツ・時以上が目安である。</p></td>
+</tr>
+<tr class="row-even"><td><p>筋力トレーニング</p></td>
+<td><p>上記の運動の一部として、週 2〜3 日行う。</p></td>
+</tr>
+<tr class="row-odd"><td><p>座位行動</p></td>
+<td><p>座りっぱなしの時間が長くなりすぎないように注意する。</p></td>
+</tr>
+</tbody>
+</table>
+<p>あわせて、身体活動・運動ガイドは、個人差を踏まえて強度や量を調整し、可能なものから取り組むこと、今よりも少しでも多く体を動かすことを勧めている。推奨量に届かないからといって、あきらめる必要はない。1 日 10 分歩く時間を増やすだけでも、健康上の効果が期待できる。</p>
+</section>
+<section id="id3">
+<h2><span class="section-number">7.2. </span>運動の強さと量の表し方<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<section id="id4">
+<h3><span class="section-number">7.2.1. </span>メッツ<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>身体活動の強さは、<a class="reference internal" href="glossary.html#term-33"><span class="xref std std-term">メッツ</span></a>という単位で表す。座って安静にしている状態を 1 メッツとして、その何倍のエネルギーを消費するかを示す。3 メッツ以上が中強度、6 メッツ以上が高強度とされる。主な活動のメッツの値を次の表に示す。</p>
+<table class="docutils align-default" id="id18">
+<caption><span class="caption-number">表 7.2 </span><span class="caption-text">主な活動のメッツの値（改訂第 2 版『身体活動のメッツ（METs）表』成人版による）</span><a class="headerlink" href="#id18" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 60.0%" />
+<col style="width: 20.0%" />
+<col style="width: 20.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>活動</p></th>
+<th class="head"><p>メッツ</p></th>
+<th class="head"><p>区分</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>座ってデスクワークをする</p></td>
+<td><p>1.3</p></td>
+<td><p>座位行動</p></td>
+</tr>
+<tr class="row-odd"><td><p>立ってパソコン作業をする</p></td>
+<td><p>1.3</p></td>
+<td><p>低強度</p></td>
+</tr>
+<tr class="row-even"><td><p>ストレッチ（ゆったり）</p></td>
+<td><p>2.3</p></td>
+<td><p>低強度</p></td>
+</tr>
+<tr class="row-odd"><td><p>歩く（時速 4 km 程度）</p></td>
+<td><p>3.0</p></td>
+<td><p>中強度</p></td>
+</tr>
+<tr class="row-even"><td><p>自重の筋力トレーニング（スクワット、腕立て伏せなど）</p></td>
+<td><p>3.0</p></td>
+<td><p>中強度</p></td>
+</tr>
+<tr class="row-odd"><td><p>歩く（時速 4.5〜5.5 km）</p></td>
+<td><p>3.8</p></td>
+<td><p>中強度</p></td>
+</tr>
+<tr class="row-even"><td><p>自転車に乗る（時速 16 km 未満）</p></td>
+<td><p>4.0</p></td>
+<td><p>中強度</p></td>
+</tr>
+<tr class="row-odd"><td><p>階段をゆっくり上る</p></td>
+<td><p>4.5</p></td>
+<td><p>中強度</p></td>
+</tr>
+<tr class="row-even"><td><p>速歩（時速 5.7〜6.3 km）</p></td>
+<td><p>4.8</p></td>
+<td><p>中強度</p></td>
+</tr>
+<tr class="row-odd"><td><p>ジョギング</p></td>
+<td><p>7.5</p></td>
+<td><p>高強度</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id5">
+<h3><span class="section-number">7.2.2. </span>メッツ・時と消費エネルギー<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<p>身体活動の量は、強さ（メッツ）に実施した時間を掛けた<a class="reference internal" href="glossary.html#term-34"><span class="xref std std-term">メッツ・時</span></a>という単位で表す。</p>
+<div class="math notranslate nohighlight">
+\[\text{身体活動量 [メッツ・時]} = \text{強さ [メッツ]} \times \text{時間 [時間]}\]</div>
+<p>たとえば、時速 4 km 程度の歩行（3.0 メッツ）を 1 時間行うと 3.0 メッツ・時、速歩（4.8 メッツ）を 30 分行うと 2.4 メッツ・時になる。身体活動・運動ガイドが推奨する「週 23 メッツ・時」は、3 メッツの歩行を毎日 1 時間あまり行う量に相当する。</p>
+<p>身体活動による消費エネルギーは、次の式で概算できる。</p>
+<div class="math notranslate nohighlight">
+\[\text{消費エネルギー [kcal]} \approx 1.05 \times \text{身体活動量 [メッツ・時]} \times \text{体重 [kg]}\]</div>
+<p>体重 60 kg の人が速歩を 30 分（2.4 メッツ・時）行うと、約 151 kcal を消費する。この値には、安静にしていても消費する分も含まれる。</p>
+</section>
+<section id="id6">
+<h3><span class="section-number">7.2.3. </span>主観的な強さ<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<p>運動中にメッツの値を確かめるのは難しい。実際には、自分が感じるきつさ（<a class="reference internal" href="glossary.html#term-12"><span class="xref std std-term">主観的運動強度</span></a>）を目安にするとよい。中強度の運動は、「楽である」から「ややきつい」と感じる程度で、息が弾むが会話はできる強さである。高強度の運動は、「きつい」と感じ、会話が難しくなる強さである。</p>
+</section>
+</section>
+<section id="id7">
+<h2><span class="section-number">7.3. </span>有酸素運動<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
+<p>ウォーキング、ジョギング、自転車、水泳のように、大きな筋肉を使って一定のリズムで長く続ける運動を<a class="reference internal" href="glossary.html#term-36"><span class="xref std std-term">有酸素運動</span></a>という。有酸素運動には次のような効果がある。</p>
+<ul class="simple">
+<li><p>心臓と肺の働きが高まり、持久力が向上する。</p></li>
+<li><p>血圧、血糖値、血液中の脂質が改善する。</p></li>
+<li><p>体脂肪が減りやすくなる。</p></li>
+<li><p>気分が前向きになり、ストレスが和らぐ。</p></li>
+<li><p>寝つきがよくなり、深い睡眠が増える。</p></li>
+</ul>
+<p>運動の習慣がない人は、まず速歩から始めるとよい。特別な道具が要らず、けがの危険も少ない。</p>
+<ul class="simple">
+<li><p>最初は 1 回 10 分程度から始め、慣れたら 1 回 20〜30 分に延ばす。</p></li>
+<li><p>通勤の途中で 1 駅分歩く、昼休みに歩く、在宅勤務の日に始業前に歩く、というように、生活の中に組み込むと続けやすい。</p></li>
+<li><p>10 分程度の短い運動を 1 日に何回かに分けて行ってもよい。</p></li>
+</ul>
+<p>速歩に慣れて物足りなくなったら、ジョギングや自転車、水泳などを取り入れる。強度を上げる場合は、時間や距離を少しずつ増やす。</p>
+</section>
+<section id="id8">
+<h2><span class="section-number">7.4. </span>筋力トレーニング<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
+<p><a class="reference internal" href="glossary.html#term-3"><span class="xref std std-term">筋力トレーニング</span></a>は、筋肉に負荷をかけて、筋力と筋肉の量を維持・向上させる運動である。筋力トレーニングには次のような効果がある。</p>
+<ul class="simple">
+<li><p>筋力が向上し、日常の動作が楽になる。</p></li>
+<li><p>体幹やお尻の筋肉が強くなり、よい姿勢を保ちやすくなり、腰痛の予防にもつながる。</p></li>
+<li><p>筋肉が血液中の糖を取り込みやすくなり、血糖値が改善する。</p></li>
+<li><p>加齢による筋肉の減少を防ぐ。</p></li>
+</ul>
+<p>ジムに通わなくても、自分の体重を負荷にする自重トレーニングで十分に始められる。座り仕事で弱りやすい脚、お尻、体幹を中心に、次のような種目を組み合わせるとよい。</p>
+<table class="docutils align-default" id="id19">
+<caption><span class="caption-number">表 7.3 </span><span class="caption-text">自宅でできる自重トレーニングの例</span><a class="headerlink" href="#id19" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 55.0%" />
+<col style="width: 25.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>種目</p></th>
+<th class="head"><p>方法</p></th>
+<th class="head"><p>主に鍛える部位</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>スクワット</p></td>
+<td><p>足を肩幅に開いて立ち、椅子に腰掛けるようにお尻を後ろに引きながら膝を曲げ、太ももが床と平行になる手前まで下ろす。膝がつま先より前に大きく出ないようにする。</p></td>
+<td><p>太もも、お尻</p></td>
+</tr>
+<tr class="row-odd"><td><p>腕立て伏せ</p></td>
+<td><p>手を肩幅より少し広く床につき、頭からかかとまでを一直線に保って、体を下ろして上げる。きつい場合は膝をついて行う。</p></td>
+<td><p>胸、腕、肩</p></td>
+</tr>
+<tr class="row-even"><td><p>プランク</p></td>
+<td><p>うつ伏せで両肘とつま先を床につき、頭からかかとまでを一直線に保つ。腰が反ったり、落ちたりしないようにする。</p></td>
+<td><p>体幹</p></td>
+</tr>
+<tr class="row-odd"><td><p>ヒップリフト</p></td>
+<td><p>仰向けで膝を立て、お尻を持ち上げて、肩から膝までを一直線にする。ゆっくり下ろす。</p></td>
+<td><p>お尻、太ももの裏</p></td>
+</tr>
+<tr class="row-even"><td><p>バードドッグ</p></td>
+<td><p>四つんばいになり、右手と左脚を床と平行になるまで伸ばして数秒保つ。反対側も同様に行う。</p></td>
+<td><p>体幹、背中、お尻</p></td>
+</tr>
+<tr class="row-odd"><td><p>カーフレイズ</p></td>
+<td><p>壁や机に手を添えて立ち、かかとをゆっくり上げ下げする。</p></td>
+<td><p>ふくらはぎ</p></td>
+</tr>
+</tbody>
+</table>
+<p>回数とセット数は、次のようにするとよい。</p>
+<ul class="simple">
+<li><p>プランク以外の種目は、1 セット 10〜15 回を目安にする。最初は 1 セットから始め、慣れたら 2〜3 セットに増やす。プランクは 20〜30 秒から始める。</p></li>
+<li><p>週に 2〜3 日、間に 1〜2 日の休養をはさんで行う。筋肉は休養の間に回復し、強くなる。</p></li>
+<li><p>動作はゆっくり行い、息を止めずに自然に呼吸を続ける。息を止めて力むと、血圧が急に上がる。</p></li>
+<li><p>正しい姿勢で行うことを優先する。回数を増やすために姿勢が崩れるなら、回数を減らす。</p></li>
+</ul>
+</section>
+<section id="id9">
+<h2><span class="section-number">7.5. </span>柔軟性とストレッチ<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
+<p>体の柔らかさ（柔軟性）を保つと、関節を楽に動かせるようになり、けがの予防にもつながる。座り仕事では、太ももの裏、股関節の前側、胸の筋肉が縮んだ状態が続き、硬くなりやすい。</p>
+<p>ストレッチには、反動をつけずに筋肉をゆっくり伸ばして保つ静的ストレッチと、関節を大きく動かしながら筋肉をほぐす動的ストレッチがある。</p>
+<ul class="simple">
+<li><p>運動の前には、腕や脚を大きく回す、その場で足踏みをする、などの動的ストレッチで体を温める。</p></li>
+<li><p>運動の後や入浴後、就寝前には、静的ストレッチで筋肉をゆっくり伸ばす。</p></li>
+</ul>
+<p>机の周りでできるストレッチは、<a class="reference internal" href="sedentary.html"><span class="doc">座りすぎを防ぐ</span></a>で紹介した。</p>
+</section>
+<section id="id10">
+<h2><span class="section-number">7.6. </span>運動と睡眠の関係<a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
+<p>定期的な運動は、寝つきをよくし、深いノンレム睡眠を増やす。日中に体を動かすことで睡眠圧が高まり、体温のリズムにも張りが出るためである。運動の習慣がある人は、睡眠の悩みが少ない傾向がある。</p>
+<p>運動する時間帯は、生活に合わせて選べばよい。</p>
+<ul class="simple">
+<li><p><strong>朝</strong>：屋外でのウォーキングなどは、朝の光を浴びることにもなり、体内時計を整える効果がある。</p></li>
+<li><p><strong>夕方から夜の早い時間</strong>：体温が高く体がよく動く時間帯で、運動に向いている。</p></li>
+<li><p><strong>就寝直前</strong>：激しい運動は、体を興奮させ、寝つきを悪くすることがある。就寝前の 1 時間ほどは、激しい運動を避け、軽いストレッチ程度にとどめる。</p></li>
+</ul>
+</section>
+<section id="id11">
+<h2><span class="section-number">7.7. </span>安全に運動するために<a class="headerlink" href="#id11" title="Link to this heading"></a></h2>
+<p>運動による効果を得るには、けがや事故を防ぎ、安全に続けることが大切である。</p>
+<ul class="simple">
+<li><p>運動の前には準備運動、後には整理運動を行う。</p></li>
+<li><p>運動の前、運動中、運動後に水分をとる。</p></li>
+<li><p>運動の量や強度は、急に増やさず、少しずつ増やす。</p></li>
+<li><p>痛みのある部位を無理に動かさない。運動中や運動後に関節や筋肉の痛みが続く場合は、運動を休む。</p></li>
+<li><p>発熱しているとき、体調が悪いとき、睡眠不足や飲酒の後は、運動を控える。</p></li>
+</ul>
+<p>運動中に胸の痛みや圧迫感、強い息切れ、動悸、めまいなどを感じたら、すぐに運動を中止する。症状が治まらない場合は、ためらわずに救急車を呼ぶ（<a class="reference internal" href="warning_signs.html"><span class="doc">不調のサインと受診の目安</span></a>を参照）。持病がある人や治療中の人は、運動を始める前に医師に相談する。</p>
+</section>
+<section id="id12">
+<h2><span class="section-number">7.8. </span>1 週間の計画の例<a class="headerlink" href="#id12" title="Link to this heading"></a></h2>
+<p>身体活動・運動ガイドの推奨量を満たす、出社日のある 1 週間の計画の例を次の表に示す。</p>
+<table class="docutils align-default" id="id20">
+<caption><span class="caption-number">表 7.4 </span><span class="caption-text">1 週間の計画の例</span><a class="headerlink" href="#id20" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>曜日</p></th>
+<th class="head"><p>内容</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>月</p></td>
+<td><p>通勤などで歩く（50 分）、階段を上る（5 分）、就寝前のストレッチ（10 分）</p></td>
+</tr>
+<tr class="row-odd"><td><p>火</p></td>
+<td><p>通勤などで歩く（50 分）、階段を上る（5 分）、自重の筋力トレーニング（20 分）</p></td>
+</tr>
+<tr class="row-even"><td><p>水</p></td>
+<td><p>通勤などで歩く（50 分）、階段を上る（5 分）、帰りに速歩（20 分）</p></td>
+</tr>
+<tr class="row-odd"><td><p>木</p></td>
+<td><p>通勤などで歩く（50 分）、階段を上る（5 分）、自重の筋力トレーニング（20 分）</p></td>
+</tr>
+<tr class="row-even"><td><p>金</p></td>
+<td><p>通勤などで歩く（50 分）、階段を上る（5 分）、就寝前のストレッチ（10 分）</p></td>
+</tr>
+<tr class="row-odd"><td><p>土</p></td>
+<td><p>買い物などで歩く（40 分）、ジョギング（30 分）</p></td>
+</tr>
+<tr class="row-even"><td><p>日</p></td>
+<td><p>買い物などで歩く（40 分）、自転車に乗る（30 分）</p></td>
+</tr>
+</tbody>
+</table>
+<p>この計画の曜日ごとの身体活動量を<a class="reference internal" href="#fig-weekly-activity"><span class="std std-numref">図 7.1</span></a> に示す。平日は通勤などの生活活動が中心だが、週末の運動と合わせて、週の合計は推奨量を上回る。在宅勤務の日は、通勤で歩く分を朝や昼休みの散歩で補う必要がある。</p>
+<figure class="align-center" id="id21">
+<span id="fig-weekly-activity"></span><a class="reference internal image-reference" href="_images/weekly_activity.png"><img alt="_images/weekly_activity.png" src="_images/weekly_activity.png" style="width: 90%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">図 7.1 </span><span class="caption-text">1 週間の身体活動量の例（3 メッツ以上の身体活動）</span><a class="headerlink" href="#id21" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id13">
+<h2><span class="section-number">7.9. </span>身体活動量を計算するサンプルコード<a class="headerlink" href="#id13" title="Link to this heading"></a></h2>
+<p>1 週間の活動記録から、身体活動量と消費エネルギーを計算し、推奨量と比べるサンプルコード activity_calc.py を用意した。ファイルは<a class="reference internal" href="samples.html"><span class="doc">サンプルコード</span></a>からダウンロードできる。上の計画の例は、サンプルデータ activity_sample.csv として同梱している。</p>
+<section id="id14">
+<h3><span class="section-number">7.9.1. </span>記録の形式<a class="headerlink" href="#id14" title="Link to this heading"></a></h3>
+<p>活動記録は、曜日（day）、活動の種類（activity）、時間（分、minutes）の 3 列からなる CSV ファイルにする。</p>
+<div class="literal-block-wrapper docutils container" id="id22">
+<div class="code-block-caption"><span class="caption-number">リスト 7.1 </span><span class="caption-text">activity_sample.csv の先頭部分</span><a class="headerlink" href="#id22" title="Link to this code"></a></div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>day,activity,minutes
+<span class="linenos">2</span>月,walk,50
+<span class="linenos">3</span>月,stairs,5
+<span class="linenos">4</span>月,stretch,10
+<span class="linenos">5</span>火,walk,50
+<span class="linenos">6</span>火,stairs,5
+<span class="linenos">7</span>火,bodyweight,20
+</pre></div>
+</div>
+</div>
+<p>活動の種類には、次のコードで定義した名前を使う。メッツの値は、前述の表と同じである。</p>
+<div class="literal-block-wrapper docutils container" id="id23">
+<div class="code-block-caption"><span class="caption-number">リスト 7.2 </span><span class="caption-text">activity_calc.py の活動の定義</span><a class="headerlink" href="#id23" title="Link to this code"></a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">39</span><span class="n">ACTIVITIES</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Activity</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+<span class="linenos">40</span>    <span class="s2">&quot;desk_work&quot;</span><span class="p">:</span> <span class="n">Activity</span><span class="p">(</span><span class="s2">&quot;座ってデスクワーク&quot;</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+<span class="linenos">41</span>    <span class="s2">&quot;standing_work&quot;</span><span class="p">:</span> <span class="n">Activity</span><span class="p">(</span><span class="s2">&quot;立ってパソコン作業&quot;</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+<span class="linenos">42</span>    <span class="s2">&quot;walk&quot;</span><span class="p">:</span> <span class="n">Activity</span><span class="p">(</span><span class="s2">&quot;歩く (時速 4 km 程度)&quot;</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+<span class="linenos">43</span>    <span class="s2">&quot;walk_moderate&quot;</span><span class="p">:</span> <span class="n">Activity</span><span class="p">(</span><span class="s2">&quot;歩く (時速 4.5〜5.5 km)&quot;</span><span class="p">,</span> <span class="mf">3.8</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+<span class="linenos">44</span>    <span class="s2">&quot;stairs&quot;</span><span class="p">:</span> <span class="n">Activity</span><span class="p">(</span><span class="s2">&quot;階段をゆっくり上る&quot;</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+<span class="linenos">45</span>    <span class="s2">&quot;cycle&quot;</span><span class="p">:</span> <span class="n">Activity</span><span class="p">(</span><span class="s2">&quot;自転車に乗る (時速 16 km 未満)&quot;</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+<span class="linenos">46</span>    <span class="s2">&quot;stretch&quot;</span><span class="p">:</span> <span class="n">Activity</span><span class="p">(</span><span class="s2">&quot;ストレッチ (ゆったり)&quot;</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+<span class="linenos">47</span>    <span class="s2">&quot;bodyweight&quot;</span><span class="p">:</span> <span class="n">Activity</span><span class="p">(</span><span class="s2">&quot;自重の筋力トレーニング&quot;</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="n">is_strength</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+<span class="linenos">48</span>    <span class="s2">&quot;brisk_walk&quot;</span><span class="p">:</span> <span class="n">Activity</span><span class="p">(</span><span class="s2">&quot;速歩 (時速 5.7〜6.3 km)&quot;</span><span class="p">,</span> <span class="mf">4.8</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+<span class="linenos">49</span>    <span class="s2">&quot;jogging&quot;</span><span class="p">:</span> <span class="n">Activity</span><span class="p">(</span><span class="s2">&quot;ジョギング&quot;</span><span class="p">,</span> <span class="mf">7.5</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+<span class="linenos">50</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Activity</span></code> の 3 番目の値は、その活動が運動かどうかを表す。4 番目の値は、筋力トレーニングかどうかを表す。ここにない活動を記録したい場合は、メッツ表で値を調べて追加すればよい。</p>
+</section>
+<section id="id15">
+<h3><span class="section-number">7.9.2. </span>使い方<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
+<p>端末で次のように実行する。<code class="docutils literal notranslate"><span class="pre">--weight</span></code> には体重（kg）を指定する。</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="go">python activity_calc.py activity_sample.csv --weight 65</span>
+</pre></div>
+</div>
+<p>実行すると、次のように表示される。</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>曜日ごとの身体活動量 (3 メッツ以上)
+  月:  2.9 メッツ・時
+  火:  3.9 メッツ・時
+  水:  4.5 メッツ・時
+  木:  3.9 メッツ・時
+  金:  2.9 メッツ・時
+  土:  5.8 メッツ・時
+  日:  4.0 メッツ・時
+
+身体活動 : 27.7 メッツ・時/週 (目安 23 以上) 達成
+運動     :  7.3 メッツ・時/週 (目安 4 以上) 達成
+筋トレ   : 2 日/週 (目安 2〜3 日) 達成
+消費エネルギー (記録した活動の合計) : 約 1,945 kcal
+</pre></div>
+</div>
+</section>
+<section id="id16">
+<h3><span class="section-number">7.9.3. </span>コードの説明<a class="headerlink" href="#id16" title="Link to this heading"></a></h3>
+<p>集計は <code class="docutils literal notranslate"><span class="pre">summarize</span></code> 関数で行う。</p>
+<div class="literal-block-wrapper docutils container" id="id24">
+<div class="code-block-caption"><span class="caption-number">リスト 7.3 </span><span class="caption-text">activity_calc.py の summarize 関数</span><a class="headerlink" href="#id24" title="Link to this code"></a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 92</span><span class="k">def</span><span class="w"> </span><span class="nf">summarize</span><span class="p">(</span><span class="n">entries</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Entry</span><span class="p">],</span> <span class="n">weight_kg</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">WeeklySummary</span><span class="p">:</span>
+<span class="linenos"> 93</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;1 週間分の活動記録を集計する。&quot;&quot;&quot;</span>
+<span class="linenos"> 94</span>    <span class="n">moderate</span> <span class="o">=</span> <span class="p">[</span><span class="n">e</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">entries</span> <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">activity</span><span class="o">.</span><span class="n">mets</span> <span class="o">&gt;=</span> <span class="n">MODERATE_METS</span><span class="p">]</span>
+<span class="linenos"> 95</span>    <span class="k">return</span> <span class="n">WeeklySummary</span><span class="p">(</span>
+<span class="linenos"> 96</span>        <span class="n">activity_mets_hours</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">mets_hours</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">moderate</span><span class="p">),</span>
+<span class="linenos"> 97</span>        <span class="n">exercise_mets_hours</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">mets_hours</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">moderate</span> <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">activity</span><span class="o">.</span><span class="n">is_exercise</span><span class="p">),</span>
+<span class="linenos"> 98</span>        <span class="n">strength_days</span><span class="o">=</span><span class="nb">len</span><span class="p">({</span><span class="n">e</span><span class="o">.</span><span class="n">day</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">entries</span> <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">activity</span><span class="o">.</span><span class="n">is_strength</span><span class="p">}),</span>
+<span class="linenos"> 99</span>        <span class="c1"># 消費エネルギー (kcal) ≒ 1.05 × メッツ・時 × 体重 (kg)</span>
+<span class="linenos">100</span>        <span class="n">energy_kcal</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="mf">1.05</span> <span class="o">*</span> <span class="n">e</span><span class="o">.</span><span class="n">mets_hours</span> <span class="o">*</span> <span class="n">weight_kg</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">entries</span><span class="p">),</span>
+<span class="linenos">101</span>    <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>身体活動・運動ガイドの推奨量は 3 メッツ以上の活動を数えるため、まず 3 メッツ以上の記録だけを取り出す。身体活動量はその合計、運動量はそのうち運動に当たるものの合計である。筋力トレーニングの日数は、筋力トレーニングを記録した曜日の数を数える。消費エネルギーは、前述の式を使って、記録したすべての活動について計算する。</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="sedentary.html" class="btn btn-neutral float-left" title="6. 座りすぎを防ぐ" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="habits.html" class="btn btn-neutral float-right" title="8. 習慣化の方法" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, Nunu_3060.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
